@@ -1,0 +1,37 @@
+{
+  "name": "qdrant-local",
+  "version": "0.0.0-alpha.10",
+  "description": "Qdrant client extension with local support",
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "qdrantBinary": {
+    "repository": "https://github.com/qdrant/qdrant",
+    "version": "1.9.2",
+    "directory": "bin",
+    "name": "qdrant"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anush008/qdrant-local.git"
+  },
+  "author": "Anush008 <anushshetty90@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anush008/qdrant-local/issues"
+  },
+  "homepage": "https://github.com/Anush008/qdrant-local#readme",
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.9.0",
+    "adm-zip": "^0.5.10",
+    "tar": "^6.1.15"
+  },
+  "files": [
+    "index.js",
+    "install.js",
+    "runner.js"
+  ]
+}
